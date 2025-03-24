@@ -1,4 +1,4 @@
-# 🎉 Interactive Calculator with Music Player 🎵  
+# 🎉 Advanced Calculator with Built-in Music Player & Confetti Effects 🎵  
 
 A **feature-rich calculator** that makes calculations fun and interactive! Built with **HTML, CSS, and JavaScript**, it includes **smooth animations, confetti effects, and sound feedback**. Plus, if you ever get bored while calculating, you can enjoy music with the built-in player!  
 
