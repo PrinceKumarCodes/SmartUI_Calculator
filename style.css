@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(./Image/image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 35px rgb(18, 17, 17);
+
+  /* background-color:rgb(41, 68, 96); */
+  /* background-color:rgb(20, 20, 21); */
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.container {
+  padding-right: 45px;
+}
+
+/* header style  */
+.title {
+  padding: 7px 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px grey, -5px -5px 3px white;
+}
+.title-text {
+  color: black;
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 9px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px grey, -5px -5px 3px white;
+}
+.title-text img {
+  width: 10%;
+  height: 10%;
+  border-radius: 5px;
+  box-shadow: inset 5px 5px 3px grey, inset -3px -3px 3px white;
+}
+.title-text p {
+  font-weight: 200px;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+/* battery style  */
+.battery-life {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.speaker {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 1px;
+  justify-content: space-between;
+  font-size: 27px;
+  background-color: rgb(196, 195, 195);
+  color: black;
+}
+.red-zone {
+  background-color: maroon;
+  border: none;
+  cursor: pointer;
+  animation-name: coloranimation;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 5px black;
+}
+.orange-zone {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  animation-name: coloranimation;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 5px black;
+}
+.green-zone {
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  animation-name: coloranimation;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 5px black;
+}
+
+@keyframes coloranimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+/* calculator body style  */
+.calc {
+  background: rgb(200, 200, 200);
+  padding: 8px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 8px double rgb(55, 55, 55);
+  box-shadow: inset 0px 0px 10px blue;
+}
+
+/*  display screen style  */
+#answer {
+  position: relative;
+  font-size: 30px;
+  width: 320px;
+  height: 85px;
+  border-radius: 13px;
+  box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+  text-align: right;
+  background-color: rgb(138, 183, 50);
+  padding: 0.6rem 0.6rem;
+  animation-name: answeranimation;
+  animation-duration: 0.1ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes answeranimation {
+  from {
+    background-color: rgb(138, 183, 50);
+  }
+  to {
+    background-color: rgb(125, 165, 45);
+  }
+}
+
+/* keyboard button input style  */
+.input-key {
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.input-style {
+  font-size: 30px;
+  width: 55px;
+  height: 48px;
+  margin: 5px 0px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px grey, -3px -3px 2px white;
+}
+input {
+  font-size: 20px;
+  width: 48px;
+  height: 42px;
+  margin: 5px 0px;
+  padding: 3px 3px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 3px grey, -5px -5px 1px white;
+  background: rgb(200, 200, 200);
+  outline: none;
+}
+/* input:hover{ 
+    box-shadow:  5px 5px 3px grey,  -5px -5px 3px white;
+} */
+
+.input-key .equal-btn {
+  background-color: chocolate;
+}
+.input-key .clear-btn {
+  background-color: green;
+}
+.input-key .delete-btn {
+  background-color: maroon;
+}
+
+/* button shadow  */
+#box {
+  box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+}
+.shadow1 {
+  box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+}
+.shadow2 {
+  box-shadow: 5px 5px 3px grey, -5px -5px 3px white;
+}
+
+/* profile calculator part */
+.formbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: top;
+}
+.part-1 {
+  padding: 0px 40px;
+}
+.part-2 {
+  text-align: center;
+  margin: 5px;
+  display: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* profile part  */
+.FirstElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+.FirstElement.adjusted-padding {
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+.FirstElement .profile-photo {
+  position: relative;
+  width: 260px;
+  height: 248px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 9px double green;
+
+  box-shadow: 0 0 25px green;
+
+  animation-name: animate;
+  animation-duration: 0.12s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  from {
+    border: 9px double blue;
+    box-shadow: 0px 0px 30px rgb(3, 67, 170);
+  }
+  to {
+    border: 9px double red;
+    box-shadow: 0px 0px 30px rgb(255, 30, 50);
+  }
+}
+
+/* this is template of animation */
+@keyframes coloranimate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 103%;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.FirstElement .profile-photo img:hover {
+  transform: scale(1.1);
+
+  width: 250px;
+  height: 250px;
+}
+.profile-text {
+  /* max-width: 750px; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0px 0px 15px rgb(21, 10, 171);
+  border: 5px solid black;
+
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.profile-text h5 {
+  color: #e5e5e5;
+  margin: 8px;
+  font-size: 18px;
+}
+.profile-text h1 {
+  color: white;
+  margin: 5px 0px;
+  padding: 0px 0px;
+  font-size: 2.5rem;
+}
+.profile-text p {
+  color: #e5e5e5;
+  font-size: 16px;
+  font-weight: 450;
+  margin: 0px;
+}
+
+/* social media platform */
+.logo .profile-text .social {
+  padding-top: 30px;
+}
+
+.logo .profile-text .social i {
+  color: #e5e5e5;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.logo .profile-text .social i:hover {
+  color: blue;
+  transform: rotate(360deg);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 350px;
+    padding: 0px 20px;
+    background-color: black;
+  }
+  .formbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .part-1 {
+    padding: 0px 0px;
+  }
+
+  .title-text {
+    width: 281px;
+  }
+  .title-text p {
+    font-size: 19px;
+  }
+  .speaker {
+    font-size: 28px;
+    background-color: rgb(196, 195, 195);
+    color: black;
+  }
+  #answer {
+    width: 291px;
+  }
+
+  .logo .profile-text .social {
+    padding-top: 12px;
+    padding-bottom: 25px;
+  }
+  .footer {
+    display: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer {
+  margin-top: 15px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 0px 25px black;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    class="stylesheet" />
+  <title>Calculator</title>
+</head>
+
+<body>
+  <main>
+    <div class="container" align="center">
+      <form action="#" name="forms" class="formbox">
+        <div class="part-1">
+          <!-- profile logo -->
+          <div class="logo">
+            <div class="FirstElement" id="home">
+              <div class="profile-photo">
+                <!-- <div class="loader"></div> -->
+                <img src="/Image/profile_photo.jpg" alt="profile picture" />
+              </div>
+              <div class="profile-text">
+                <br />
+                <h5>Hi I'm</h5>
+                <h1>Prince Kumar</h1>
+                <br />
+                <p>
+                  Welcome to my calculator website! As a dedicated and
+                  aspiring web developer, I am driven by a passion for
+                  creating innovative solutions and advancing technology. I
+                  love coding and problem-solving, and I continuously seek
+                  opportunities to learn and grow in this dynamic field.
+                </p>
+                <div class="social">
+                  <a href="mailto:prince.kumar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="https://github.com/PrinceKumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/prince/" target="_blank"><i
+                      class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calc part-2">
+          <div class="title">
+            <div class="title-text">
+              <p>
+                <button class="speaker">
+                  <i class="fa-solid fa-volume-low" onclick="togglePlay()"><audio src="./Image/Old_Song_Audio.mp3"
+                      loop></audio></i>
+                </button>
+                <button class="battery-life red-zone"></button>
+                <button class="battery-life orange-zone"></button>
+                <button class="battery-life green-zone" id="blink"></button>
+              </p>
+              <p>CALCULATOR</p>
+              <img src="./Image/battery.png" alt="battery" />
+            </div>
+          </div>
+
+          <input type="text" name="inputbox" id="answer" />
+
+          <br />
+
+          <div class="input-key" id="box">
+            <div class="input-style" id="singlebox1">
+              <input class="clear-btn" id="btnshadow1" type="button" value="AC" onclick="forms.inputbox.value=' '" />
+            </div>
+            <div class="input-style" id="singlebox2">
+              <input class="delete-btn" id="btnshadow2" type="button" value="DEL"
+                onclick="forms['inputbox'].value = forms['inputbox'].value.slice(0, -1)" />
+            </div>
+            <div class="input-style" id="singlebox3">
+              <input id="btnshadow3" type="button" value="%" onclick="forms.inputbox.value+='%'" />
+            </div>
+            <div class="input-style" id="singlebox4">
+              <input id="btnshadow4" type="button" value="/" onclick="forms.inputbox.value+='/'" />
+            </div>
+
+            <div class="input-style" id="singlebox5">
+              <input id="btnshadow5" type="button" value="7" onclick="forms.inputbox.value+='7'" />
+            </div>
+            <div class="input-style" id="singlebox6">
+              <input id="btnshadow6" type="button" value="8" onclick="forms.inputbox.value+='8'" />
+            </div>
+            <div class="input-style" id="singlebox7">
+              <input id="btnshadow7" type="button" value="9" onclick="forms.inputbox.value+='9'" />
+            </div>
+            <div class="input-style" id="singlebox8">
+              <input id="btnshadow8" type="button" value="*" onclick="forms.inputbox.value+='*'" />
+            </div>
+
+            <div class="input-style" id="singlebox9">
+              <input id="btnshadow9" type="button" value="4" onclick="forms.inputbox.value+='4'" />
+            </div>
+            <div class="input-style" id="singlebox10">
+              <input id="btnshadow10" type="button" value="5" onclick="forms.inputbox.value+='5'" />
+            </div>
+            <div class="input-style" id="singlebox11">
+              <input id="btnshadow11" type="button" value="6" onclick="forms.inputbox.value+='6'" />
+            </div>
+            <div class="input-style" id="singlebox12">
+              <input id="btnshadow12" type="button" value="+" onclick="forms.inputbox.value+='+'" />
+            </div>
+
+            <div class="input-style" id="singlebox13">
+              <input id="btnshadow13" type="button" value="1" onclick="forms.inputbox.value+='1'" />
+            </div>
+            <div class="input-style" id="singlebox14">
+              <input id="btnshadow14" type="button" value="2" onclick="forms.inputbox.value+='2'" />
+            </div>
+            <div class="input-style" id="singlebox15">
+              <input id="btnshadow15" type="button" value="3" onclick="forms.inputbox.value+='3'" />
+            </div>
+            <div class="input-style" id="singlebox16">
+              <input id="btnshadow16" type="button" value="-" onclick="forms.inputbox.value+='-'" />
+            </div>
+
+            <div class="input-style" id="singlebox17">
+              <input id="btnshadow17" type="button" value="00" onclick="forms.inputbox.value+='00'" />
+            </div>
+            <div class="input-style" id="singlebox18">
+              <input id="btnshadow18" type="button" value="0" onclick="forms.inputbox.value+='0'" />
+            </div>
+            <div class="input-style" id="singlebox19">
+              <input id="btnshadow19" type="button" value="." onclick="forms.inputbox.value+='.'" />
+            </div>
+            <div class="input-style" id="singlebox20">
+              <input class="equal-btn" id="btnshadow20" type="button" value="="
+                onclick="forms.inputbox.value = eval(forms.inputbox.value)" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <small class="message">Thanks for visiting my Calculator website!</small><br />
+    <small class="copyright">&copy; Copyright 2024. All right reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
