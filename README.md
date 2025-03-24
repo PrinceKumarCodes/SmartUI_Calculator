@@ -1,5 +1,5 @@
 # 🎉 Interactive Calculator with Music Player 🎵
-A feature-rich calculator that makes calculations fun and engaging! Built with HTML, CSS, and JavaScript, this calculator enhances user experience with smooth animations, confetti effects, sound feedback, and a built-in music player—so you never get bored while calculating!
+A feature-rich calculator that makes calculations fun and interactive! Built with HTML, CSS, and JavaScript, it includes smooth animations, confetti effects, and sound feedback. Plus, if you ever get bored while calculating, you can enjoy music with the built-in player!
 
 # 🚀 Features
 - Basic & Advanced Calculations – Perform quick and accurate calculations
