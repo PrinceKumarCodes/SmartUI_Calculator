@@ -23,4 +23,4 @@ A **feature-rich calculator** that makes calculations fun and interactive! Built
 
 ---
 
-📌 *Enhance your calculating experience with fun visuals and music!* 🚀🎶  
+📌  *Enhance your calculating experience with fun visuals and music!* 🚀🎶  
