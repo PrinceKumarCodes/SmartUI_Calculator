@@ -21,6 +21,9 @@ for (let i = 1; i <= 20; i++) {
     });
 }
 
+//Make updateable year
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 //audio play when i will click
 
 function togglePlay(video) {
